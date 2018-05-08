@@ -2,7 +2,7 @@ name: "Digital-Deshpande"
 output_dir: "."
 navbar:
   title: "Digital Deshpande"
-  left:
+  right:
     - text: "Home"
       href: index.html
     - text: "About Me"
