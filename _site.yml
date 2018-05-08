@@ -6,5 +6,7 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "About Me"
-      theme: cosmo
       href: about.html
+output:
+  html_document:
+    theme: flatly
