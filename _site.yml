@@ -1,9 +1,10 @@
-name: "nicks-website"
+name: "Digital Deshpande Home"
 output_dir: "."
 navbar:
-  title: "Nicks Website"
+  title: "Digital Deshpande"
   left:
     - text: "Home"
       href: index.html
     - text: "About Me"
+      theme: cosmo
       href: about.html
