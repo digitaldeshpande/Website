@@ -1,12 +1,29 @@
-name: "Digital-Deshpande"
+name: "DIGITAL DESHPANDE"                                # CHANGE HERE 
 output_dir: "."
 navbar:
-  title: "Digital Deshpande"
-  right:
+  title: "Digital Deshpande"                             # CHANGE HERE 
+  type: inverse
+  left:
     - text: "Home"
+      icon: fa-home
       href: index.html
-    - text: "About Me"
+    - text: "About"
+      icon: fa-user 
       href: about.html
+    - text: "Resources"
+      href: cv.html
+      icon: fa-file
+  right:
+    - text: "Contact me"
+      icon: fa-envelope-o
+      href: mailto:digitaldeshpande@gmail.com                    # CHANGE HERE 
+    - text: "Follow us"
+      icon: fa-twitter
+      href: https://twitter.com/DigitDeshpande       # CHANGE HERE 
 output:
   html_document:
-    theme: flatly
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: yeti
+    highlight: textmate

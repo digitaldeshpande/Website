@@ -1,4 +1,5 @@
-setwd("/Users/Sandeep/Documents/DigitalDeshpande/Website/website")
-#render your sweet site. 
+setwd("/Users/Sandeep/Downloads/rmarkdown-website-template-master")
+
 install.packages("rmarkdown")
 rmarkdown::render_site()
+

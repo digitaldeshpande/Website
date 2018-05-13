@@ -11,7 +11,7 @@
 
 
 
-<title>Digital Deshpande</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,13 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -167,101 +163,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
 
 
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
@@ -278,7 +179,7 @@ div.tocify {
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fa fa-home"></span>
+    <span class="fa fa-camera-retro"></span>
      
     Home
   </a>
@@ -322,30 +223,65 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Digital Deshpande</h1>
 
 </div>
 
 
-<div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example: <img src="index_files/figure-html/cars-1.png" width="672" /></p>
+<div id="make-your-website-with-r-markdown-in-minutes" class="section level1">
+<h1>Make your website with R Markdown in minutes</h1>
+<p>This is a template (and tutorial) for creating your website with R Markdown in minutes.</p>
+<p>The official document from RStudio can be found <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html">here</a>.</p>
+<div id="procedure" class="section level2">
+<h2>Procedure</h2>
+<div id="prerequisites" class="section level3">
+<h3>Prerequisites</h3>
+<ul>
+<li><p>Make sure that you have the latest versions of R, RStudio and package rmarkdown. I had problems of encoding because of that.</p></li>
+<li><p>Make sure that you have enabled Git in RStudio. More information can be found <a href="https://privefl.github.io/advr38book/good-practices.html#git">there</a>.</p></li>
+<li><p>You need a GitHub account.</p></li>
+</ul>
+</div>
+<div id="make-the-first-version-of-your-website" class="section level3">
+<h3>Make the first version of your website</h3>
+<ul>
+<li><p>Fork this repo (top-right) and rename it to be ‘YOURGITHUB.github.io’ (in Settings of your brand new repo).</p></li>
+<li><p>Get the link from cloning the repo. Use the green button “Clone” and make sure you use SSH, not HTTPS. Then, go to RStudio, create a New Project &gt; Version Control &gt; Git and copy this link. You have cloned your new repo as an R project.</p></li>
+<li><p>Build the website by running <code>rmarkdown::render_site(encoding = &quot;UTF-8&quot;)</code> or just <code>Ctrl/Cmd + Shift + B</code>.</p></li>
+<li><p>Commit and push everything from RStudio.</p></li>
+<li><p>Go see your new website at <a href="https://YOURGITHUB.github.io/" class="uri">https://YOURGITHUB.github.io/</a>.</p></li>
+</ul>
+</div>
+<div id="change-the-content-of-your-website" class="section level3">
+<h3>Change the content of your website</h3>
+<ul>
+<li>Modify <code>_site.yml</code>, <code>index.Rmd</code>, <code>about.Rmd</code>, <code>cv.Rmd</code> and <code>CV.pdf</code> with your own content.</li>
+<li><p>Build your website again. At any moment, you can preview your website locally, by rendering your site and viewing any of your local html file in your Web Browser.</p></li>
+<li><p>Commit and push everything from RStudio.</p></li>
+<li><p>Go see your new website with your own content at <a href="https://YOURGITHUB.github.io/" class="uri">https://YOURGITHUB.github.io/</a>.</p></li>
+</ul>
+</div>
+<div id="the-blog-part" class="section level3">
+<h3>The blog part</h3>
+<p>For now, the ‘Blog’ link is giving a 404 page.</p>
+<p>If you want to add a static blog to your webpage, go <a href="https://github.com/privefl/jekyll-now-r-template">there</a>.</p>
 </div>
 </div>
-<div id="digital-deshpande" class="section level1">
-<h1>Digital Deshpande</h1>
-<p><img src="index_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<div id="two-examples" class="section level2">
+<h2>Two examples</h2>
+<p>You can see for example - <a href="https://privefl.github.io/">my own website</a>,</p>
+<ul>
+<li><a href="https://r-in-grenoble.github.io/">the website of the R user group in Grenoble</a>.</li>
+</ul>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>As a reminder, all credit goes to the geniuses at RStudio (thanks also to <a href="https://pages.github.com/">GitHub pages</a>). I just made some minor modifications and made a tuto about how to use all this together.</p>
+<p>If anything is false or not clear enough, feel free to contact me or open an issue. If it is an issue only related with R Markdown, you’ll find a better answer posting <a href="https://github.com/rstudio/rmarkdown">there</a>.</p>
+</div>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
