@@ -5,6 +5,13 @@ title: "Digital Deshpande"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+# Our vision
+
+![](images/logo.png)
+
+__To develop and share the technological advances for the betterment of mankind__
+
 # R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.

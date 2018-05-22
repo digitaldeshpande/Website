@@ -27,3 +27,4 @@ output:
     toc_float: true
     theme: yeti
     highlight: textmate
+    css: style.css
