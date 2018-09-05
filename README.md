@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Make your website with R Markdown in minutes
 
 This is a template (and tutorial) for creating your website with R Markdown in minutes.
@@ -54,3 +55,6 @@ As a reminder, all credit goes to the geniuses at RStudio (thanks also to [GitHu
 
 If anything is false or not clear enough, feel free to contact me or open an issue.
 If it is an issue only related with R Markdown, you'll find a better answer posting [there](https://github.com/rstudio/rmarkdown).
+=======
+# Website
+>>>>>>> cee1352e0c53520a010fdbfcf2efd63df7e77399
